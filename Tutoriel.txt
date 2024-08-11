@@ -1,0 +1,49 @@
+git --version                                               // Vérifier la version de Git
+
+git config --global user.name "davidc4489"                  // Configurer le nom d'utilisateur global
+
+git config --global user.email davidc4489@gmail.com         // Configurer l'adresse e-mail globale 
+
+git init                                                    // Initialiser un nouveau dépôt Git
+
+git status                                                  // Vérifier l'état du dépôt
+
+git add *.txt                                               // Ajouter tous les fichiers .txt au staging area
+
+git commit -m "First Commit"                                // Faire un commit avec un message
+
+git clone Projet-Git Projet-Git-2                           // Cloner un dépôt (source: Projet-Git, destination: Projet-Git-2)
+
+git rm "file.txt"                                           // Supprimer un fichier du dépôt
+
+git rm --cached "file.txt"                                  // Supprimer un fichier du staging area (mais le garder dans le répertoire de travail)
+
+git reset HEAD "file.txt"                                   // Réinitialiser le fichier au dernier commit (enlever les modifications non commises)
+
+git mv file.txt newName.txt                                 // Renommer ou déplacer un fichier
+
+git log                                                     // Afficher l'historique des commits
+
+git log -p                                                  // Afficher l'historique des commits avec les différences pour chaque commit
+
+git log --pretty=oneline                                    // Afficher l'historique des commits avec une seule ligne par commit
+
+git log --author davidc4489                                 // Afficher l'historique des commits par auteur
+
+git log --since 01-01-2024                                  // Afficher l'historique des commits depuis une date spécifique
+
+git restore "fichier_1.txt"                                 // Restaurer un fichier à son état du dernier commit
+
+git branch test                                             // Crée une branche nommée 'test'
+
+git checkout test                                           // Change pour la branche 'test'
+
+git merge test                                              // Fusionne les commits de la branche 'test' dans la branche courante
+
+git branch -d test                                          // Supprime la branche 'test' si elle est complètement fusionnée
+
+git branch -D test                                          // Supprime la branche 'test' même si elle n'est pas complètement fusionnée (forcé)
+
+git remote add origin https://github.com/davidc4489/Git.git // Ajoute un dépôt distant nommé 'origin' avec l'URL spécifiée
+
+git push -u origin master                                   // Pousse les commits locaux vers la branche 'master' du dépôt distant 'origin' et configure le suivi
